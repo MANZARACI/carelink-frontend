@@ -1,8 +1,6 @@
 # Blind Assistant
 
-https://blind-assistant.netlify.app
-
-This is the frontend repository of the Blind Assistant Project
+This is the frontend repository of the CareLink Project
 
 ## Required Environment Variables
   - REACT_APP_FIREBASE_API_KEY
