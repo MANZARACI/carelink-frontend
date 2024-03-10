@@ -9,10 +9,20 @@ import { useAuth } from "./contexts/AuthContext";
 import LocationsPage from "./pages/LocationsPage";
 import SettingsPage from "./pages/SettingsPage";
 import ForgotPasswordPage from "./pages/ForgotPasswordPage";
+import CalendarPage from "./pages/CalendarPage";
 
 import "./App.css";
+import DailyPage from "./pages/DailyPage";
 
 const loggedInRoutes = [
+  {
+    path: "/calendar",
+    element: <CalendarPage />,
+  },
+  {
+    path: "/calendar/:date",
+    element: <DailyPage />,
+  },
   {
     path: "/locations",
     element: <LocationsPage />,
