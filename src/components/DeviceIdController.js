@@ -56,8 +56,12 @@ const DeviceIdController = () => {
       const response = await axios.post(
         process.env.REACT_APP_BACKEND_URL + "/device/deviceId",
         {
-          idToken,
           newDeviceId,
+        },
+        {
+          headers: {
+            Authorization: idToken,
+          },
         }
       );
 
@@ -84,7 +88,7 @@ const DeviceIdController = () => {
       <div className="flex flex-col sm:flex-row sm:space-x-2 m-sm:space-y-2">
         <div className="flex rounded-md shadow-lg">
           <span className="inline-flex items-center rounded-l-md border border-r-0 border-gray-300 bg-gray-50 px-3 text-sm">
-            Device ID:
+            Device ID
           </span>
           <input
             ref={newDeviceIdRef}
