@@ -3,6 +3,7 @@ import { useAuth } from "../contexts/AuthContext";
 import { Link } from "react-router-dom";
 
 const navItems = [
+  { barName: "Faces", path: "/faces" },
   { barName: "Calendar", path: "/calendar" },
   { barName: "Locations", path: "/locations" },
   { barName: "Settings", path: "/settings" },

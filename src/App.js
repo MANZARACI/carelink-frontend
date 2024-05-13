@@ -13,6 +13,7 @@ import CalendarPage from "./pages/CalendarPage";
 
 import "./App.css";
 import DailyPage from "./pages/DailyPage";
+import FacesPage from "./pages/FacesPage";
 
 const loggedInRoutes = [
   {
@@ -30,6 +31,10 @@ const loggedInRoutes = [
   {
     path: "/settings",
     element: <SettingsPage />,
+  },
+  {
+    path: "/faces",
+    element: <FacesPage />,
   },
   {
     path: "/*",
